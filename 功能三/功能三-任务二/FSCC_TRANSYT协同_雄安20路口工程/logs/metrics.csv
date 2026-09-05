@@ -1,0 +1,8 @@
+algorithm,period,steps,wall_seconds,steps_per_second,final_active_vehicles,final_queue_proxy
+max_pressure,morning,50,0.148,337.18,6,9
+max_pressure,morning,50,0.145,345.59,13,22
+ugat_frap,morning,50,0.299,167.34,14,24
+max_pressure,morning,7500,28.004,267.82,82,136
+ugat_frap,morning,7500,40.965,183.08,87,147
+ugat_frap,morning,50,0.212,236.21,14,24
+ugat_frap,morning,7500,32.285,232.31,87,147

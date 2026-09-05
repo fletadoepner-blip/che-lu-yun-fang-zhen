@@ -1,0 +1,10 @@
+# 功能一·任务三 依赖（主交付 20 路口平台；Windows 或 Linux）
+# 1×5 / 4×4 工程在官方 UGAT 镜像 danielda1/ugat:latest 内运行，依赖由镜像提供。
+torch>=2.0
+numpy>=1.24
+matplotlib>=3.7
+openpyxl>=3.1
+python-docx>=1.1
+# 可选：在本机直接运行 CityFlow 需要 Linux/CMake 工具链，推荐用项目内 Dockerfile 从
+# third_party/CityFlow 源码编译（见 docs/CITYFLOW_INSTALL.md）：
+# cityflow @ git+https://github.com/cityflow-project/CityFlow.git

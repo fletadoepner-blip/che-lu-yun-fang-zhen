@@ -1,0 +1,16 @@
+{
+  "methods": [
+    "fixed",
+    "transyt",
+    "ugat_frap",
+    "ugat_transyt",
+    "frap_transyt",
+    "ugat_frap_transyt"
+  ],
+  "periods": [
+    "morning",
+    "midday",
+    "evening"
+  ],
+  "records": 18
+}

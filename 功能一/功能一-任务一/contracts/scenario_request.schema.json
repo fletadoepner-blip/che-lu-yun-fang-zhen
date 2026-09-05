@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scenario generation request",
+  "type": "object",
+  "required": ["latitude", "longitude"],
+  "properties": {
+    "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+    "longitude": {"type": "number", "minimum": -180, "maximum": 180},
+    "radius_m": {"type": "integer", "minimum": 50, "maximum": 5000, "default": 300},
+    "duration_s": {"type": "integer", "minimum": 60, "maximum": 86400, "default": 3600}
+  },
+  "additionalProperties": false
+}

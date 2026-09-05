@@ -1,0 +1,10 @@
+algorithm,period,steps,total_demand,throughput_est,average_travel_time_s,estimated_delay_s,final_queue_proxy,wall_seconds
+fixed_time,evening,7500,87051,0.999816,980.884,909.232,16,71.486
+max_pressure,evening,7500,,,,,,
+transyt_style,evening,7500,87051,0.999816,917.116,845.465,16,72.118
+fixed_time,midday,7500,54864,0.999763,846.804,775.401,13,67.691
+max_pressure,midday,7500,,,,,,
+transyt_style,midday,7500,54864,0.999763,781.482,710.080,13,68.079
+fixed_time,morning,7500,77749,0.999704,1204.245,1130.715,23,69.068
+max_pressure,morning,7500,,,,,,
+transyt_style,morning,7500,77749,0.999704,1153.059,1079.528,23,69.691

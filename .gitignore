@@ -1,0 +1,21 @@
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Large packaged images and archives
+*.tar
+*.tar.gz
+*.zip
+
+# Runtime-generated outputs
+**/outputs/*.html
+**/outputs/*.json
+**/outputs/*.csv
+**/results/
+
+# Local OS files
+Thumbs.db
+Desktop.ini

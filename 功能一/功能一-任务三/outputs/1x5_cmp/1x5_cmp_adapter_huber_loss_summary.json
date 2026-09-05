@@ -1,0 +1,10 @@
+{
+  "loss_name": "smooth_l1_loss (Huber)",
+  "raw_min": 0.0,
+  "raw_max": 11.48849105834961,
+  "valid_updates": 184211,
+  "display_scale": "symlog",
+  "display_ymin": 0.0,
+  "display_ymax": 1000000.0,
+  "values_above_display_limit": 0
+}

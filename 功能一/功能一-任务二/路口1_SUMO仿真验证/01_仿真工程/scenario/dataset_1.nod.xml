@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nodes><node id="W" x="-220" y="0" type="priority" /><node id="E" x="220" y="0" type="priority" /><node id="N" x="0" y="220" type="priority" /><node id="S" x="0" y="-220" type="priority" /><node id="J1" x="0" y="0" type="traffic_light" radius="15" /></nodes>

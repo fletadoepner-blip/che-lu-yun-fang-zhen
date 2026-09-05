@@ -1,0 +1,25 @@
+{
+  "intersection": 1,
+  "name": "雄州路711号附近",
+  "period": "evening",
+  "roads": 18,
+  "virtual_intersections": 18,
+  "roadLinks": 21,
+  "vehicles": 4592,
+  "observed_feeder": [
+    "feed_01_E",
+    "feed_01_N",
+    "feed_01_S",
+    "feed_01_W"
+  ],
+  "border_out": {
+    "W": "exit_border_01_W",
+    "E": "exit_border_01_E",
+    "S": "exit_border_01_S"
+  },
+  "border_in": {
+    "W": "feed_border_01_W",
+    "E": "feed_border_01_E",
+    "S": "feed_border_01_S"
+  }
+}

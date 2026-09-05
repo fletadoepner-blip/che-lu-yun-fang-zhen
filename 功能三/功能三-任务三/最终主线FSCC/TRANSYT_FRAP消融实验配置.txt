@@ -1,0 +1,4 @@
+场景：雄安新区20路口 CityFlow，20个受控路口
+步数：7500；决策间隔：10步；线程：1；时段：morning/midday/evening
+算法组：fixed、transyt、ugat_frap、ugat_transyt、frap_transyt、ugat_frap_transyt
+运行镜像：xiong-an-20-transyt:ablation；各组原始 metrics.csv、trace JSON 和 live JSONL 保存在 outputs/ablation_transyt/<method>/<period>/

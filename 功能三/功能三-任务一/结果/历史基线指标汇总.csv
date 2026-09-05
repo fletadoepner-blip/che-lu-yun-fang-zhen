@@ -1,0 +1,10 @@
+algorithm,period,steps,wall_seconds,steps_per_second,total_demand,scheduled_vehicles,completed_vehicles_est,throughput_est,final_active_vehicles,final_queue_proxy,average_travel_time_s,estimated_delay_s,freeflow_mean_s,result_status
+fixed_time,morning,7500,69.068,108.59,77749,77749,77726,0.999704,23,23,1204.245,1130.715,73.530,历史已保存
+fixed_time,midday,7500,67.691,110.80,54864,54864,54851,0.999763,13,13,846.804,775.401,71.402,历史已保存
+fixed_time,evening,7500,71.486,104.92,87051,87051,87035,0.999816,16,16,980.884,909.232,71.651,历史已保存
+transyt_style,morning,7500,69.691,107.62,77749,77749,77726,0.999704,23,23,1153.059,1079.528,73.530,历史已保存
+transyt_style,midday,7500,68.079,110.17,54864,54864,54851,0.999763,13,13,781.482,710.080,71.402,历史已保存
+transyt_style,evening,7500,72.118,104.00,87051,87051,87035,0.999816,16,16,917.116,845.465,71.651,历史已保存
+max_pressure,morning,7500,,,,,,,,,,,,待按 scripts/run_baselines.py 复算
+max_pressure,midday,7500,,,,,,,,,,,,待按 scripts/run_baselines.py 复算
+max_pressure,evening,7500,,,,,,,,,,,,待按 scripts/run_baselines.py 复算

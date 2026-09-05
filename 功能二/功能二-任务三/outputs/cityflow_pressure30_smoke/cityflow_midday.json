@@ -1,0 +1,11 @@
+{
+  "interval": 1.0,
+  "seed": 20260816,
+  "dir": "/app/data/xiong_an_20/",
+  "roadnetFile": "roadnet.json",
+  "flowFile": "flow_midday_pressure30.json",
+  "rlTrafficLight": true,
+  "saveReplay": false,
+  "roadnetLogFile": "logs/roadnet.log",
+  "replayLogFile": "logs/replay.txt"
+}

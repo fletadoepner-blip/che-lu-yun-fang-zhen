@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration><input><net-file value="dataset_1.net.xml" /><route-files value="dataset_1.rou.xml" /><additional-files value="dataset_1.add.xml" /></input></configuration>

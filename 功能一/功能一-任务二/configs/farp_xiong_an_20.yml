@@ -1,0 +1,14 @@
+includes:
+  - configs/xiong_an_20.yaml
+model:
+  name: farp_xiong_an_20
+  train_model: false
+  test_model: true
+  ugat_frozen: true
+  max_frap_weight: 1.0
+trainer:
+  test_steps: 7500
+world:
+  intersections: 20
+  periods: [morning, midday, evening]
+  phase_pairs: [[4,10],[1,7],[5,11],[2,8],[10,11],[4,5],[7,8],[1,2]]

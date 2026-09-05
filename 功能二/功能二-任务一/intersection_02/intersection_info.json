@@ -1,0 +1,26 @@
+{
+  "intersection": 2,
+  "name": "津海大街-奥威路（容和塔北侧）",
+  "period": "evening",
+  "roads": 19,
+  "virtual_intersections": 19,
+  "roadLinks": 21,
+  "vehicles": 2299,
+  "observed_feeder": [
+    "feed_02_N",
+    "feed_02_S",
+    "feed_02_W"
+  ],
+  "border_out": {
+    "W": "exit_border_02_W",
+    "E": "exit_border_02_E",
+    "N": "exit_border_02_N",
+    "S": "exit_border_02_S"
+  },
+  "border_in": {
+    "N": "feed_border_02_N",
+    "W": "feed_border_02_W",
+    "E": "feed_border_02_E",
+    "S": "feed_border_02_S"
+  }
+}

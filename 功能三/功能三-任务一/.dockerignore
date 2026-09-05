@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+结果/*
+TRANSYT经典算法_雄安20路口工程/outputs/
+TRANSYT经典算法_雄安20路口工程/logs/
+third_party/CityFlow/.git/
+third_party/CityFlow/extern/pybind11/.git/
+third_party/CityFlow/extern/rapidjson/.git/

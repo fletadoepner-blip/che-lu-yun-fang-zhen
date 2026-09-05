@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "信号控制动作",
+  "description": "控制器输出：每个受控路口一个 0..7 的相位动作。20路口平台内部映射到 CityFlow 相位 1..8（动作0为3秒黄灯/清空相位）。",
+  "type": "object",
+  "required": ["dim", "action_range", "phase_pairs"],
+  "properties": {
+    "dim": {"const": 8, "description": "动作数量（每路口）"},
+    "action_range": {"description": "0..7 整数"},
+    "phase_pairs": {
+      "type": "array",
+      "items": {"type": "array", "items": {"type": "integer"}, "minItems": 2, "maxItems": 2},
+      "description": "8 个相位的车道-移动对，见 src/ugat_frap.py PHASE_PAIRS"
+    },
+    "action_lanes": {
+      "type": "array",
+      "description": "MaxPressure 基线使用的车道对（src/algorithms.py ACTION_LANES）"
+    }
+  }
+}

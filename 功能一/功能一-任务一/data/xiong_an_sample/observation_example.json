@@ -1,0 +1,13 @@
+{
+  "time_s": 120.0,
+  "intersections": {
+    "cluster_1": {
+      "phase": 2,
+      "phase_duration_s": 18.0,
+      "queue_length": 7,
+      "lanes": {
+        "lane_n_0": {"vehicle_count": 5, "queue_count": 3, "speed_mps": 4.2, "occupancy_pct": 36.0}
+      }
+    }
+  }
+}

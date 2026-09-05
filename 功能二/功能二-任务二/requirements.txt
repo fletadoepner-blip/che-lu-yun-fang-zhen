@@ -1,0 +1,4 @@
+numpy>=1.24
+torch>=2.0
+# CityFlow needs to be installed in Linux, WSL, or the supplied Docker environment.
+cityflow>=0.1

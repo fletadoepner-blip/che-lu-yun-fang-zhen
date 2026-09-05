@@ -1,0 +1,16 @@
+period,metric,task3_final_baseline,task2_main_version,difference,aligned
+morning,average_travel_time_s,1149.833,1149.833,0.000,TRUE
+morning,estimated_delay_s,1076.303,1076.303,0.000,TRUE
+morning,throughput_est,0.999704,0.999704,0.000000,TRUE
+morning,final_queue_proxy,23,23,0,TRUE
+morning,frap_override_rate,0.148,0.148,0.000,TRUE
+midday,average_travel_time_s,777.750,777.750,0.000,TRUE
+midday,estimated_delay_s,706.348,706.348,0.000,TRUE
+midday,throughput_est,0.999763,0.999763,0.000000,TRUE
+midday,final_queue_proxy,13,13,0,TRUE
+midday,frap_override_rate,0.030667,0.030667,0.000000,TRUE
+evening,average_travel_time_s,912.174,912.174,0.000,TRUE
+evening,estimated_delay_s,840.523,840.523,0.000,TRUE
+evening,throughput_est,0.999816,0.999816,0.000000,TRUE
+evening,final_queue_proxy,16,16,0,TRUE
+evening,frap_override_rate,0.049867,0.049867,0.000000,TRUE

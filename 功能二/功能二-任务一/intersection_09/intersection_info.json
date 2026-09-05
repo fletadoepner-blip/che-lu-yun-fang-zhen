@@ -1,0 +1,26 @@
+{
+  "intersection": 9,
+  "name": "铃铛阁大街221号附近",
+  "period": "evening",
+  "roads": 19,
+  "virtual_intersections": 19,
+  "roadLinks": 24,
+  "vehicles": 3347,
+  "observed_feeder": [
+    "feed_09_E",
+    "feed_09_N",
+    "feed_09_NE",
+    "feed_09_S",
+    "feed_09_W"
+  ],
+  "border_out": {
+    "W": "exit_border_09_W",
+    "N": "exit_border_09_N",
+    "S": "exit_border_09_S"
+  },
+  "border_in": {
+    "N": "feed_border_09_N",
+    "W": "feed_border_09_W",
+    "S": "feed_border_09_S"
+  }
+}

@@ -1,0 +1,21 @@
+includes:
+  - configs/tsc/base.yml
+model:
+  name: farp4x4
+  train_model: False
+  test_model: True
+  load_model: False
+  graphic: False
+  one_hot: True
+  phase: True
+  epsilon: 0.0
+  epsilon_decay: 1.0
+  epsilon_min: 0.0
+  max_frap_weight: 1.00
+trainer:
+  test_steps: 3600
+world:
+  signal_config:
+    hz4x4:
+      phase_pairs: [[4,10],[1,7],[5,11],[2,8],[10,11],[4,5],[7,8],[1,2]]
+      valid_acts: null

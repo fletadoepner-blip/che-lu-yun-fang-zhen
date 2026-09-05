@@ -1,0 +1,30 @@
+# Candidate values are for validation/tuning only. The `selected_for_comparison`
+# block is the sole setting permitted in the reported fair comparison.
+seed: 20260816
+common:
+  steps: 7500
+  decision_interval_s: 10
+  threads: 1
+  periods: [morning, midday, evening]
+fixed_time:
+  phase_hold_decisions: [1, 2, 3, 4]
+  phase_offset: [0, 1, 2, 3, 4, 5, 6, 7]
+max_pressure:
+  variant: [max_pressure, actuated_pressure]
+  min_green_decisions: [1, 2, 3]
+  max_green_decisions: [4, 6]
+  switch_ratio: [1.05, 1.10, 1.20]
+transyt_style:
+  cycle_decisions: [8, 9, 10, 12]
+  demand_alpha: [0.25, 0.35, 0.50]
+  instant_weight: [0.25, 0.35, 0.50]
+selected_for_comparison:
+  fixed_time:
+    algorithm: fixed
+    phase_hold_decisions: 3
+    phase_offset: 0
+  max_pressure:
+    algorithm: max_pressure
+  transyt_style:
+    algorithm: transyt
+    cycle_decisions: 9

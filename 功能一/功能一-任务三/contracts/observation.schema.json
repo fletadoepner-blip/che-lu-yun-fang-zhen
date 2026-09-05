@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "路口观测状态（20维向量）",
+  "description": "UGAT/FRAP 控制器输入：12 维车道需求 + 8 维当前相位 one-hot。20路口平台中 CityFlow 采集器顺序为 12 个车道计数在前、8 个相位标志在后；FRAP 分支在 src/ugat_frap.py 内部会把后 8 维翻到前面。",
+  "type": "object",
+  "required": ["dim", "lane_demand", "phase_one_hot", "dtype"],
+  "properties": {
+    "dim": {"const": 20, "description": "输入总维度"},
+    "lane_demand": {
+      "type": "object",
+      "description": "12 维车道需求：4 个方向(W/E/N/S) x 3 个车道组(左转/直行右转/直行右转)，顺序与 src/run_cityflow.py collect_state 一致",
+      "properties": {
+        "length": {"const": 12},
+        "order": {"description": "[W左,W直右,W直右, E左,E直右,E直右, N左,N直右,N直右, S左,S直右,S直右]"}
+      }
+    },
+    "phase_one_hot": {
+      "type": "object",
+      "description": "8 维当前相位 one-hot；相位对见 src/ugat_frap.py PHASE_PAIRS",
+      "properties": {"length": {"const": 8}}
+    },
+    "dtype": {"const": "float32"},
+    "range": {"description": "车道需求 >=0；相位标志 ∈ {0,1}"}
+  }
+}

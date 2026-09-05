@@ -1,0 +1,2 @@
+algorithm,period,steps,wall_seconds,steps_per_second,total_demand,scheduled_vehicles,completed_vehicles_est,throughput_est,final_active_vehicles,final_queue_proxy,average_travel_time_s,estimated_delay_s,freeflow_mean_s,coordination_decisions,frap_override_count,frap_override_rate,transyt_frap_agreement_rate,coordination_override_ratio,coordination_overload_ratio,coordination_minimum_gain
+ugat_frap_transyt,morning,7500,82.456,90.96,77749,77749,77726,0.999704,23,23,1149.833,1076.303,73.53,15000,2220,0.148,0.151733,1.05,0.95,1.0

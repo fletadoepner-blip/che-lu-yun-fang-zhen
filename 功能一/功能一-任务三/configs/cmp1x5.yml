@@ -1,0 +1,19 @@
+includes:
+  - configs/tsc/base.yml
+model:
+  name: cmp1x5
+  train_model: false
+  test_model: true
+  load_model: false
+  graphic: false
+  one_hot: true
+  phase: true
+  epsilon: 0.0
+  epsilon_decay: 1.0
+  epsilon_min: 0.0
+  t_min: 10
+  cmp_beta: 0.60
+  cmp_alpha: 0.60
+  policy: cmp
+trainer:
+  test_steps: 9000

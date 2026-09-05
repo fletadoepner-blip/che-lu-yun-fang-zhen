@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Intersection observation",
+  "type": "object",
+  "required": ["time_s", "intersections"],
+  "properties": {
+    "time_s": {"type": "number", "minimum": 0},
+    "intersections": {"type": "object", "additionalProperties": {"type": "object", "required": ["phase", "queue_length", "lanes"], "properties": {"phase": {"type": "integer", "minimum": 0}, "phase_duration_s": {"type": "number", "minimum": 0}, "queue_length": {"type": "integer", "minimum": 0}, "lanes": {"type": "object"}}}}
+  },
+  "additionalProperties": false
+}

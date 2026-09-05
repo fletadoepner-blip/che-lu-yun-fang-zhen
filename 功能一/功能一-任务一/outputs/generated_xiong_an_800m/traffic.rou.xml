@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-08-28 16:08:28.994676 by Eclipse SUMO randomTrips.py v1_27_1+0000-7717f2379d9
+<configuration>
+    <net-file value="C:\Users\ASUS\AppData\Local\Temp\xiong_an_kkrt9b95\network.net.xml"/>
+    <output-trip-file value="C:\Users\ASUS\AppData\Local\Temp\xiong_an_kkrt9b95\trips.trips.xml"/>
+    <route-file value="C:\Users\ASUS\AppData\Local\Temp\xiong_an_kkrt9b95\traffic.rou.xml"/>
+    <end value="900.0"/>
+    <period value="1.0"/>
+    <flows value="10"/>
+</configuration>
+-->
+
+<!-- generated on 2026-08-28T16:08:28.917572+08:00 by Eclipse SUMO duarouter 1.27.1
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\ASUS\AppData\Local\Temp\xiong_an_kkrt9b95\network.net.xml"/>
+        <route-files value="C:\Users\ASUS\AppData\Local\Temp\xiong_an_kkrt9b95\trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\ASUS\AppData\Local\Temp\xiong_an_kkrt9b95\traffic.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <processing>
+        <routing-threads value="8"/>
+        <keep-flows value="true"/>
+    </processing>
+
+    <time>
+        <begin value="0"/>
+        <end value="900.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <flow id="0" begin="0.00" end="900.00" period="10">
+        <route edges="1241040455#1 1241040456#0 -1241040454#1"/>
+    </flow>
+    <flow id="1" begin="0.00" end="900.00" period="10">
+        <route edges="-1241040456#1 -1241040456#0"/>
+    </flow>
+    <flow id="2" begin="0.00" end="900.00" period="10">
+        <route edges="1241040456#0"/>
+    </flow>
+    <flow id="3" begin="0.00" end="900.00" period="10">
+        <route edges="-1241040456#0 1241040455#0 -1241040455#0 1241040456#0 1241040454#0"/>
+    </flow>
+    <flow id="4" begin="0.00" end="900.00" period="10">
+        <route edges="-1241040454#0 -1241040456#0"/>
+    </flow>
+    <flow id="5" begin="0.00" end="900.00" period="10">
+        <route edges="1241040455#1 1241040456#0 1241040454#0"/>
+    </flow>
+    <flow id="6" begin="0.00" end="900.00" period="10">
+        <route edges="-1241040456#0 1241040455#0"/>
+    </flow>
+    <flow id="7" begin="0.00" end="900.00" period="10">
+        <route edges="1241040456#1 1241040456#0 -1241040454#1"/>
+    </flow>
+    <flow id="8" begin="0.00" end="900.00" period="10">
+        <route edges="1241040456#1 1241040456#0"/>
+    </flow>
+    <flow id="9" begin="0.00" end="900.00" period="10">
+        <route edges="567878913#0 -1241041572#0"/>
+    </flow>
+</routes>

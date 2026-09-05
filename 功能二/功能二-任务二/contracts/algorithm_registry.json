@@ -1,0 +1,13 @@
+{
+  "contract_version": "1.0",
+  "action_space": {"type": "discrete", "count": 8, "values": [0, 1, 2, 3, 4, 5, 6, 7], "cityflow_phase_offset": 1},
+  "observation": {"shape": [20, 12], "dtype": "float32", "description": "20 junctions by WL,WT,WR,EL,ET,ER,NL,NT,NR,SL,ST,SR movement demand"},
+  "algorithms": [
+    {"id": "fixed", "adapter": "src.algorithms.FixedTimeAlgorithm", "requires_model": false},
+    {"id": "max_pressure", "adapter": "src.algorithms.MaxPressureAlgorithm", "requires_model": false},
+    {"id": "actuated_pressure", "adapter": "src.algorithms.ActuatedPressureAlgorithm", "requires_model": false},
+    {"id": "transyt_style", "adapter": "src.algorithms.TransytStyleAlgorithm", "requires_model": false},
+    {"id": "ugat_frap", "adapter": "src.run_cityflow.build_algorithm", "requires_model": true},
+    {"id": "ugat_frap_transyt", "adapter": "src.algorithms.TransytFrapCoordinator", "requires_model": true}
+  ]
+}

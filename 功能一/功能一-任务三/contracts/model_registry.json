@@ -1,0 +1,92 @@
+{
+  "title": "功能一·任务三 模型注册表（Model Registry）",
+  "version": "2.0",
+  "updated": "2026-08-28",
+  "note": "每个模型版本的输入输出维度与配置必须一致；权重文件位于 model/ 与 outputs/。主交付场景为 1×3 绿波（冻结 UGAT + C-MP），1×5 为开发中间版本。frozen_ugat_4x4.pt 与 4x4 工程的 best_4x4_model_0.pt 为同一文件（SHA-256 相同）。",
+  "models": [
+    {
+      "id": "ugat_1x5_1x3",
+      "name": "UGAT 1×3/1×5 分层检查点（主交付迁移分支）",
+      "file": "model/ugat1x5_best.pt",
+      "sha256_prefix": "a16543fc0560b660",
+      "architecture": "5 个 rank 子网络，每 rank 三层 20 隐藏单元；输入维度 rank0..4 = [8,6,8,12,12]，动作数 = [2,1,2,4,4]；1×3 场景按走廊拓扑取对应 rank",
+      "input_dim": null,
+      "output_dim": null,
+      "param_count": 3393,
+      "trainable": false,
+      "format": "torch state_dict（分层）",
+      "used_by": ["scripts/ugat_cmp_1x5.py", "scripts/run_cmp_1x5.py --policy ugat", "1×3 绿波（configs/cmp1x3.yml）"],
+      "scenario": "CityFlow 1×3 绿波（主交付）/ Atlanta 1×5（中间版本）"
+    },
+    {
+      "id": "ugat_4x4_frozen",
+      "name": "Frozen UGAT 4x4 基座（20路口/4x4 共用）",
+      "file": "model/frozen_ugat_4x4.pt",
+      "sha256_prefix": "42d7f1d0f9968e48c0",
+      "architecture": "dense_1:20->20, dense_2:20->20, dense_3:20->8 (ReLU)",
+      "input_dim": 20,
+      "output_dim": 8,
+      "param_count": 1008,
+      "trainable": false,
+      "format": "torch state_dict (OrderedDict)",
+      "used_by": ["src/ugat_frap.py::FrozenUGAT", "4x4 工程 run_farp_4x4.py"],
+      "scenario": "雄安20路口 / CityFlow hz4x4"
+    },
+    {
+      "id": "frap_adapter_20",
+      "name": "FRAP 适配器（20路口平台）",
+      "file": "model/frap_adapter.pt",
+      "sha256_prefix": "c2e90e084b007cf1",
+      "architecture": "state 内 'frap' 为 FRAPAdapter 权重，'fusion' 为融合标量",
+      "input_dim": 20,
+      "output_dim": 8,
+      "param_count": 1370,
+      "trainable": true,
+      "format": "torch dict {frap, fusion}",
+      "used_by": ["src/ugat_frap.py::UGATFRAPController.load_adapter"],
+      "scenario": "雄安20路口"
+    },
+    {
+      "id": "ugat_4x4_adapter",
+      "name": "FRAP 适配器（4x4 工程）",
+      "file": "outputs/4x4_frap/4x4_farp_adapter.pt",
+      "sha256_prefix": null,
+      "architecture": "4x4 工程 logs/4x4_farp_adapter.pt（状态见 4x4 报告）",
+      "input_dim": 20,
+      "output_dim": 8,
+      "param_count": 1370,
+      "trainable": true,
+      "format": "torch state_dict",
+      "used_by": ["scripts/run_farp_4x4.py", "scripts/train_4x4_adapter.py"],
+      "scenario": "CityFlow hz4x4"
+    },
+    {
+      "id": "ugat_official_best",
+      "name": "原始 UGAT 权重档案（官方版）",
+      "file": "model/official_ugat_best.pt",
+      "sha256_prefix": "d1c19f3bcc0508d9",
+      "architecture": "16->20->20->8 (ReLU)",
+      "input_dim": 16,
+      "output_dim": 8,
+      "param_count": 848,
+      "trainable": false,
+      "format": "torch state_dict",
+      "used_by": [],
+      "scenario": "原始提供档案，未在三个工程中直接引用"
+    },
+    {
+      "id": "ugat_best_1",
+      "name": "原始 UGAT 权重档案（备选）",
+      "file": "model/ugat_best_1.pt",
+      "sha256_prefix": "2a8bab57fbb06a14",
+      "architecture": "16->20->20->8 (ReLU)",
+      "input_dim": 16,
+      "output_dim": 8,
+      "param_count": 848,
+      "trainable": false,
+      "format": "torch state_dict",
+      "used_by": [],
+      "scenario": "原始提供档案，未在三个工程中直接引用"
+    }
+  ]
+}

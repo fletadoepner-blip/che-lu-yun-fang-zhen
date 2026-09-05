@@ -1,0 +1,9 @@
+{
+  "scenario_id": "xiong_an_osm_sample",
+  "center": {"latitude": 38.9429, "longitude": 115.8977},
+  "radius_m": 300,
+  "duration_s": 3600,
+  "step_length_s": 1,
+  "config_path": "scenario/tmp_treda0t.sumocfg",
+  "description": "雄安新区路口 OSM-SUMO 接口示例；文件名沿用原始生成结果。"
+}

@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-08-09T10:04:16",
+  "max_frap_weight": 1.0,
+  "travel_time": 428.710358699296,
+  "throughput": 2912.0,
+  "queue": 6.85069465637207,
+  "delay_ratio_apx": 0.15971146523952484,
+  "rewards": -111.58277893066406
+}

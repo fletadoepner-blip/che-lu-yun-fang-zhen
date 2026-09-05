@@ -1,0 +1,7 @@
+{
+  "metrics_csv_required_columns": ["algorithm", "period", "steps", "wall_seconds", "steps_per_second", "final_active_vehicles", "final_queue_proxy"],
+  "trace_record_required_fields": ["time_s", "active_vehicles", "queue_proxy", "node_queue_proxy", "actions"],
+  "trace_complete_record": {"status": "complete", "metrics": "same fields as metrics.csv row"},
+  "encoding": "UTF-8",
+  "action_semantics": "Algorithm actions are 0..7; runner sends action + 1 to CityFlow. CityFlow phase 0 is reserved for clearance."
+}

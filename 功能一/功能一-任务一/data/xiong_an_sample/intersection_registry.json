@@ -1,0 +1,8 @@
+{
+  "scenario_id": "xiong_an_osm_sample",
+  "source": "OSM-SUMO interface sample",
+  "intersections": [
+    {"intersection_id": "cluster_1", "name": "待 SUMO 生成后映射", "longitude": 115.8977, "latitude": 38.9429, "signalized": true}
+  ],
+  "note": "SUMO 实际 traffic-light ID 由 /v1/simulation/start 返回；本文件只演示字段，不宣称为真实路口清单。"
+}

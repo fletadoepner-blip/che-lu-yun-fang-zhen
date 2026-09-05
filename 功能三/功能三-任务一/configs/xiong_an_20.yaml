@@ -1,0 +1,17 @@
+seed: 20260816
+network:
+  rows: 4
+  cols: 5
+  spacing_m: 420
+  feeder_length_m: 160
+  link_length_m: 420
+simulation:
+  interval_s: 1
+  decision_interval_s: 10
+  yellow_s: 3
+  clearance_s: 300
+  default_steps: 7500
+model:
+  checkpoint: model/frozen_ugat_4x4.pt
+  adapter_state: model/frap_adapter.pt
+  max_frap_weight: 1.0

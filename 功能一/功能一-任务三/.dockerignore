@@ -1,0 +1,6 @@
+__pycache__/
+outputs/
+*.pyc
+third_party/CityFlow/.git/
+third_party/CityFlow/extern/pybind11/.git/
+third_party/CityFlow/extern/rapidjson/.git/

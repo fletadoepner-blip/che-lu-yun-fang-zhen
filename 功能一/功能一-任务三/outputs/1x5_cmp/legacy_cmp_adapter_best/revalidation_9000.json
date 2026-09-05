@@ -1,0 +1,15 @@
+{
+  "policy": "cmp_legacy_adapter",
+  "checkpoint_source": "C:/Users/lauri/Desktop/1x5ugat+C-MP/logs/cmp_adapter_checkpoints/best_rank_*.pt",
+  "seed": 4444,
+  "test_steps": 9000,
+  "cmp_beta": 0.6,
+  "cmp_alpha": 0.6,
+  "cmp_uncertainty_margin": 2.0,
+  "override_advantage": 0.15,
+  "travel_time": 1008.7885766927683,
+  "queue": 8.200666427612305,
+  "delay_ratio_apx": 0.1450585126876831,
+  "throughput": 2171,
+  "status": "verified_fallback_model"
+}
